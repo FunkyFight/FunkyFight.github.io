@@ -27,7 +27,6 @@ window.setInterval(function() {
 		fetchMaterial(j, "potato_item", "enchanted_potato", 160);
 		fetchMaterial(j, "enchanted_potato", "enchanted_baked_potato", 160);
 		fetchMaterial(j, "pumpkin", "enchanted_pumpkin", 160)
-		fetchMaterial(j, "magma_cream", "enchanted_magma_cream", 160)
 		fetchMaterial(j, "melon", "enchanted_melon", 160)
 		fetchMaterial(j, "enchanted_melon", "enchanted_melon_block", 160)
 		fetchMaterial(j, "seeds", "enchanted_seeds", 160)
@@ -61,6 +60,7 @@ window.setInterval(function() {
 		fetchMaterial(j, "blaze_rod", "enchanted_blaze_powder", 160)
 		fetchMaterial(j, "enchanted_blaze_powder", "enchanted_blaze_rod", 160)
 		fetchMaterial(j, "magma_cream", "enchanted_magma_cream", 160)
+		fetchMaterial(j, "enchanted_sponge", "enchanted_wet_sponge", 40)
 	})
 
 	
