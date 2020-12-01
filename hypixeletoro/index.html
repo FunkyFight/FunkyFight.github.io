@@ -5,6 +5,19 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="button.css">
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  
+  
+  <link rel="stylesheet" type="text/css" href="plugins\tooltipster\css\tooltipster.main.css" />
+  <link rel="stylesheet" type="text/css" href="plugins\tooltipster\css\tooltipster.bundle.css" />
+  <script type="text/javascript" src="plugins\tooltipster\js\tooltipster.main.js"></script>
+  <script type="text/javascript" src="plugins\tooltipster\js\tooltipster.bundle.js"></script>
+    
+  <script>
+    $(document).ready(function() {
+        $('.tooltip').tooltipster({animation: 'grow'});
+    });
+</script>
+
   <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
@@ -27,6 +40,6 @@
     
   </tbody>
 </table>
-<a style="width: 90%;" id="percent_hide" class="btn block circular">Cacher les pourcentages négatifs</a>
+<a style="width: 90%;" id="percent_hide" class="tooltip btn block circular" title="Cette fonctionnalité vous permet de cacher les items ne vous donnant pas de profit.">Cacher les pourcentages négatifs</a>
 </body>
 </html>
