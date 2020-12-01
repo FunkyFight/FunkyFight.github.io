@@ -107,6 +107,6 @@ function fetchMaterial(json, materialname, enchantmaterial, multiplier) {
 			$(".table-body").after("<tr style=\"background-color:#c0392b\" class=\""+materialname+"\"><td data-label=\"Item\">"+materialname + " <img src=\"images\\arrow.png\"></img> " + enchantmaterial +"</td><td data-label=\"Prix x160 (enchant)\">" + normalEnchantPrice + " (x"+multiplier+")</td><td data-label=\"Prix x1 (enchant)\">"+sellPrice+"</td></td><td data-label=\"Recette net\">"+benef+" coins/i</td><td data-label=\"Pourcentage\">"+percent+"%</td></tr>")
 
 		} else {
-			$(".table-body").after("<tr style=\"background-color:#2ecc71\" data-minetip-title=\"&f"+materialname+"\" class=\""+materialname+"\"><td data-label=\"Item\">"+materialname + " <img src=\"images\\arrow.png\"></img> " + enchantmaterial +"</td><td data-label=\"Prix x160 (enchant)\">" + normalEnchantPrice + " (x"+multiplier+")</td><td data-label=\"Prix x1 (enchant)\">"+sellPrice+"</td></td><td data-label=\"Recette net\">"+benef+" coins/i</td><td data-label=\"Pourcentage\">"+percent+"%</td></tr>")
+			$(".table-body").after("<tr style=\"background-color:#2ecc71\" data-minetip-title=\"\&f"+materialname+"\" class=\""+materialname+"\"><td data-label=\"Item\">"+materialname + " <img src=\"images\\arrow.png\"></img> " + enchantmaterial +"</td><td data-label=\"Prix x160 (enchant)\">" + normalEnchantPrice + " (x"+multiplier+")</td><td data-label=\"Prix x1 (enchant)\">"+sellPrice+"</td></td><td data-label=\"Recette net\">"+benef+" coins/i</td><td data-label=\"Pourcentage\">"+percent+"%</td></tr>")
 		}
 }
