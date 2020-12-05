@@ -88,8 +88,8 @@ window.setInterval(function() {
 		fetchMaterial(j, "enchanted_ice", "enchanted_packed_ice", 160)
 		fetchMaterial(j, "sand", "enchanted_sand", 160)
 		fetchMaterial(j, "ender_stone", "enchanted_endstone", 160)
-		fetchMaterial(j, "snowball", "snow_block", 4)
-		fetchMaterial(j, "snowball", "enchanted_snow_block", 640)
+		fetchMaterial(j, "snow_ball", "snow_block", 4)
+		fetchMaterial(j, "snow_ball", "enchanted_snow_block", 640)
 		fetchMaterial(j, "snow_block", "enchanted_snow_block", 160)
 	})
 
