@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d'exercices</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="algebra-0.2.6.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="el">
+        <div v-if="state == 'WAITING'">
+            <button class="newExercise">Générer un Nouvel Exercice</button>
+        </div>
+        <div class="solvenow" v-if="state == 'SOLVENOW'">
+            <div class="function">f(x) = {{ func.toString() }} en {{ antecedent }}</div>
+            <div class="todo">
+                <details class="stepone-details">
+                    <summary>A) Trouver f({{ antecedent }})</summary>
+                    <div class="logs" v-html="stepone_logs"></div>
+                </details>
+                <br>
+                <details class="ta-details">
+                    <summary>B) Trouver TA</summary>
+                    <div class="logs" v-html="ta_logs"></div>
+                </details>
+                <br>
+                <details class="deriv-details">
+                    <summary>C) Calculer le nombre dérivé</summary>
+                    <div class="logs" v-html="deriv_logs"></div>
+                </details>
+                <br>
+                <details class="tan-details">
+                    <summary>D) Calculer l'équation de tangeante</summary>
+                    <div class="logs" v-html="tan_logs"></div>
+                </details>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>
