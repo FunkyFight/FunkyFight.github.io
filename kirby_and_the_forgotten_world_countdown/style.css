@@ -3,10 +3,26 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #F69D99;
+}
+
+.title {
+    position: relative;
+    top: 250px;
+    left: 180px;
     font-size: 100px;
     color: #F69D99;
+    position: relative;
+}
+
+.countdown {
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
 }
 
 body {
     background-color: #A92C3C;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
