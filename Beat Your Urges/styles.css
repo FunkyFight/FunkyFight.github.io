@@ -1,0 +1,114 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+main {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+    padding: 1rem;
+    padding-left: 2rem; /* Augmentation de l'espace à gauche pour ajuster le texte */
+    border-left: 5px solid #2c3e50;
+    margin: 1.5rem 0;
+    position: relative;
+    font-style: italic;
+    overflow: hidden; /* Assurez-vous que le contenu ne dépasse pas le bloc */
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 4rem;
+    color: #2c3e50;
+    position: absolute;
+    left: 10px; /* Ajustement pour ne pas empiéter sur le bord */
+    top: -20px;
+    z-index: 1;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 4rem;
+    color: #2c3e50;
+    position: absolute;
+    right: 10px; /* Ajustement pour que le guillemet ne soit pas coupé */
+    bottom: -40px; /* Baissez le guillemet pour qu'il soit entièrement visible */
+    z-index: 1;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    color: #666;
+}
+
+/* Pour les grands écrans */
+@media (min-width: 768px) {
+    main {
+        padding: 4rem;
+    }
+
+    blockquote {
+        font-size: 2rem;
+    }
+}
+
+cite {
+    display: block; /* Affiche le nom de l'auteur sur une nouvelle ligne */
+    text-align: right; /* Alignez le texte à droite */
+    margin-top: 0.5rem; /* Un peu d'espace entre la citation et l'auteur */
+    font-style: normal; /* Normalement, cite est en italique, nous réinitialisons cela */
+    font-size: 1rem; /* Taille de police pour l'auteur */
+    font-weight: bold; /* Rendre le nom de l'auteur en gras */
+}
+
+#countdown-container {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem; /* Espacement entre le bloc de citations et le compte à rebours */
+}
+
+#countdown {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
